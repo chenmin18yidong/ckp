@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*头部*/
+.headnav{
+    width: 100%;
+    height: 390px;
+    background: url(../image/sussess/top_banner3.png)no-repeat;
+}
+.headnav .top {
+    width: 1188px;
+    height: 70px;
+    margin-left: 366px;
+  }
+  .headnav .top span{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    margin-top: 15px;
+    background: url(../image/home/0_logo.png)no-repeat;
+  }
+  .headnav .top ul a{
+    color:rgba(255,255,255,1);
+  }
+  .headnav .top ul{
+    margin-left: 188px;
+    display: inline-block;
+    margin-top: -30px;
+    width:840px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   color:rgba(255,255,255,1);
+       font-size: 16px;
+       font-family: "PingFang SC";
+   
+  }
+  
+   .headnav .top ul li:nth-child(3)::after
+   {
+   
+        display: block;
+      content: " ";
+      width: 72px;
+      height: 4px;
+      background-color: white;
+      margin-top: 15px;
+     
+  
+    }
+  
+    .headnav .top ul li:nth-child(8){
+      width: 92px;
+      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      font-family: "PingFang SC";
+      font-size:14px ;
+      color:rgba(255, 255, 255, 1);
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .headnav .top .headnav_top_p{
+       text-align: center;
+        font-size:42px ;
+        font-family:"PingFang SC" ;
+        color:rgba(255, 255, 255, 1);
+        padding: 50px 0 20px;
+
+    }
+    .headnav .top .headnav_top_p1{
+        text-align: center;
+         font-size:16px ;
+         font-family:"PingFang SC" ;
+         color:rgba(255, 255, 255, 1);
+         padding: 30px;
+  
+     }
+    
+/*头部结束*/
+
+
+
+    /*<!--面包屑-->
+    <!--关于我们-->
+      <!--关于我们开始-*/
+      .about_our .current{
+        width: 1200px;
+        margin: 30px auto;
+    }
+    .about_our .current ul li{
+        display: inline-block;
+        color:rgba(163, 163, 163, 1);
+    }
+    
+    .about_our .current ul li:nth-child(4){
+        display: inline-block;
+        color:rgba(51, 51, 51, 1);
+    }
+
+
+    
+/*p 导航条*/
+.nav{
+    width: 100%;
+    display: block;
+     padding: 60px 0 20px;
+     text-align: center;
+    font-size: 32px;
+
+    font-family:"PingFang SC" ;
+    color :rgba(68, 68, 68, 1);
+  }
+  .nav::after{
+    display: block;
+    content: " ";
+    width: 120px;
+    height: 4px;
+    background-color: rgba(70, 142, 255, 1);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+
+
+  /*成功案列*/
+  .success_list{
+cursor: pointer;
+  }
+  .success_list ul{
+    text-align: center;
+
+   display: inline-block;
+   margin: 20px 0px;
+  }
+  .success_list ul li{
+    margin: 10px 0;
+    line-height: 28px;
+    font-size:18px ;
+    font-family: "PingFang SC";
+    color:rgba(79, 79, 79, 1);
+  }
+  .success_list ul button{
+    position: absolute;
+    top: 40%;
+    height: 14%;
+    left: 25%;
+    width: 50%;
+    background: rgba(70, 142, 255, 1);
+    font-size:14px ;
+    font-family: "PingFang SC";
+    line-height:14px ;
+    border: none;
+    color: #fff;
+    display: none;
+    transform: 0.5s;
+    z-index: 2;
+  }
+.ceng{
+    display: block;
+    width: 90%;
+    height: 82%;
+    margin-left: 20px;
+    background: rgba(70, 68, 68, 0.8);
+    color:#fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-sizing: border-box;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 0.3s;
+    z-index: 1;
+
+  }
+  .success_list .ulone:hover .ceng{
+    transform: rotateX(0);
+  }
+
+
+
+  @media(max-width:	750px){
+    .public_width{
+      width: 100%;
+    }
+  }
+  
+/*底部导航*/
+.bottomnav{
+  margin: auto;
+  width: 100%;
+  height: 320px;
+  background-color: rgba(34, 38, 61, 1);
+}
+.btnavfloat{
+  width: 1200px;
+  margin: auto;
+}
+.bottomnav .btnav_left .left_list ul{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bottomnav .btnav_left .left_list ul li{
+  padding: 30px;
+display: inline-block;
+font-size: 16px;
+font-family: "PingFang SC";
+color:rgba(187, 187, 187, 1);
+}
+.bottomnav .btnav_left .liback{
+  width: 200px;
+  background: url(../image/home/0_logo.png)no-repeat;
+  background-size: 100% 100%;
+}
+.bottomnav .ml{
+  margin-left: 30px;
+}
+.bottomnav .police{
+  font-size:14px ;
+  font-family:"PingFang SC" ;
+  color:rgba(119, 119, 119, 1);
+  margin-top: 50px;
+  margin-left: 343px;
+}
+.bottomnav .btnav_right .rightspan{
+  display: inline-block;
+   width: 1px;
+   height: 150px;
+   background-color: #fff;
+   margin-top: 100px;
+   margin-left: -100px;
+}
+.bottomnav .btnav_right img{
+  margin-left: 80px;
+  margin-top: -150px;
+}
+
+
+

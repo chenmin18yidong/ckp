@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*头部*/
+.headnav{
+    width: 100%;
+    height: 390px;
+    background: url(../image/hangye/top_banner4_1.png)no-repeat;
+}
+.headnav .top {
+    width: 1188px;
+    height: 70px;
+    margin-left: 366px;
+  }
+  .headnav .top span{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    margin-top: 15px;
+    background: url(../image/home/0_logo.png)no-repeat;
+  }
+  .headnav .top ul{
+    margin-left: 188px;
+    display: inline-block;
+    margin-top: -30px;
+    width:840px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   color:rgba(255,255,255,1);
+       font-size: 16px;
+       font-family: "PingFang SC";
+   
+  }
+  .headnav .top ul li a{
+      color: #fff;
+  }
+  .headnav .top ul li:nth-child(8){
+    width: 92px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-family: "PingFang SC";
+    font-size:14px ;
+    color:rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+  
+    cursor: pointer;
+  }
+  .headnav .top ul li:nth-child(4) a::after{
+    display: block;
+    content: " ";
+    width: 72px;
+    height: 4px;
+    background-color: white;
+    margin-top: 15px;}
+
+
+
+/*头部标题结束*/
+
+
+/*seo新闻资源*/
+.headnav .toptext{
+   text-align: center;
+    margin-top: 120px;
+
+}
+.headnav .toptext ul li{
+    font-size: 42px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    color:rgba(255, 255, 255, 1);
+    display: block;
+    padding: 20px;
+}
+
+.headnav .toptext ul li:nth-child(2){
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "PingFang SC";
+    color:rgba(255, 255, 255, 1);
+    display: block;
+    padding: 20px;
+}
+
+.headnav .top ul li:nth-child(8){
+    width: 92px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-family: "PingFang SC";
+    font-size:14px ;
+    color:rgba(255, 255, 255, 1);
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+/*seo资源结束*/
+
+
+/**/
+.position{
+    display: inline-block;
+    margin: 10px 366px;
+    font-size: 12px;
+    color:rgba(163, 163, 163, 1);
+}
+
+/*行业资讯  新闻咨询    热门资讯     排名资*/
+
+.industry{
+    width: 1200px;
+    height: 1200px;
+    margin: 10px auto;
+    
+}
+/*左边内容*/
+.industry  .lefttop{
+    width: 300px;
+    height: 224px;
+   
+}
+.industry  .industry_left .lefttop{
+    box-shadow: 1px 3px 12px  rgba(12, 29, 99, 0.16);
+}
+.industry  .industry_left .lefttop img{
+    margin: 20px;
+    position: relative;
+    margin-top: -270px;
+}
+.industry  .industry_left .lefttop .ul{
+   
+    text-align: center;
+    width: 166px;
+    height: 180px;
+    margin: 10px 0 10px 20px;
+   
+
+    display: inline-block;
+    
+}
+.industry  .industry_left .lefttop ul li a{
+    width: 166px;
+    display: inline-block;
+   
+    font-size: 18px;
+    font-family: "PingFang SC";
+    color: rgba(68, 68, 68, 1);
+    padding: 10px 0;
+}
+/*左边第一排完毕*/
+
+/*第二排*/
+
+.industry .industry_left .leftmiddle{
+    text-align: center;
+    width: 300px;
+    height: 72px;
+    line-height: 72px;
+
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: "PingFang SC";
+    color: rgba(68, 68, 68, 1);box-shadow: 1px 3px 12px  rgba(12, 29, 99, 0.16);
+
+
+}
+.industry .industry_left .leftmiddle img{
+   margin-left: -80px;
+}
+.industry .industry_left .leftmiddle span{
+    margin-left: 80px;
+}
+
+
+
+/*右边内容*/
+.industry  .industry_right{
+    width: 810px;
+}
+.industry  .industry_right .right_list{
+ 
+    padding: 20px   0;
+}
+/*左边图片*/
+.industry .industry_right .right_list img{
+    width: 240px;
+    height: 135px;
+ 
+}
+/*右边文字*/
+
+.industry .industry_right .right_list .text{
+    width: 540px;
+    height: 135px;
+
+    font-size:14px ;
+    font-family: "PingFang SC";
+    color:rgba(152, 152, 152, 1);
+    line-height:24px ;
+}
+.industry .industry_right .right_list .text ul li:nth-child(1){
+    font-size:20px ;
+
+    color:rgba(68, 68, 68, 1);
+    
+}
+.industry .industry_right .right_list .text ul li{
+    padding: 5px;
+}
+
+
+
+@media(max-width:1200px){
+    .position{
+        width: 100%;
+        margin-left: 50%;
+    }
+}
+

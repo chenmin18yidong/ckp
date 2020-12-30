@@ -1,0 +1,278 @@
+
+
+
+
+    /*<!--面包屑-->
+    <!--关于我们-->
+      <!--关于我们开始-*/
+      .about_our .current{
+        width: 1200px;
+        margin: 30px auto;
+    }
+    .about_our .current ul li{
+        display: inline-block;
+        color:rgba(163, 163, 163, 1);
+    }
+    
+    .about_our .current ul li:nth-child(4){
+        display: inline-block;
+        color:rgba(51, 51, 51, 1);
+    }
+
+
+    
+/*p 导航条*/
+.nav{
+    width: 100%;
+    display: block;
+     padding: 60px 0 20px;
+     text-align: center;
+    font-size: 32px;
+
+    font-family:"PingFang SC" ;
+    color :rgba(68, 68, 68, 1);
+  }
+  .nav::after{
+    display: block;
+    content: " ";
+    width: 120px;
+    height: 4px;
+    background-color: rgba(70, 142, 255, 1);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+
+  /*超快排功能介绍*/
+  .function{
+      margin: 50px auto;
+     padding: 40px 185px;
+      background: #fff;
+    box-shadow: 1px 3px 12px  rgba(12, 29, 99, 0.16);
+    line-height: 28px;
+    font-size:16px ;
+    color:rgba(112, 112, 112, 1);
+  font-family: "PingFang SC";
+  text-align: left;
+  }
+
+
+
+  /*字  图   图字   字图   */
+
+  /*first的左边文字*/
+.img_text .first .left{
+    width: 50%;
+    margin: 50px 0;
+ 
+}
+
+.img_text .first .left ul li:nth-child(1){
+   font-size:24px ;
+   color:rgba(112, 112, 112, 1);
+   line-height:28px ;
+   padding: 10px;
+}
+.img_text .first .left ul li:nth-child(2){
+    font-size:16px ;
+    color:rgba(112, 112, 112, 1);
+    line-height:28px ;
+    padding: 10px;
+
+ }
+ .img_text .first .left ul li:nth-child(4){
+    font-family: "PingFang SC ";
+    font-size:16px ;
+    color:rgba(181, 181, 181, 1);
+    line-height:36px ;
+    padding: 20px 60px 0 10px;
+
+ }
+/*first的右边图片*/
+.img_text .first .right{
+    width: 50%;
+
+    padding: 10px 0 ;
+}
+.img_text .first .right img{
+    border: 1px dashed black;
+}
+
+
+
+/*四大优化内容模块*/
+.optimization_content{
+    width: 100%;
+    background: rgba(245, 249, 255, 1);
+    padding:  0 0  150px 0;
+}
+.optimization_content .four_modular {
+    margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ 
+}
+
+.optimization_content .four_modular .modular ul li{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "PingFang SC";
+    line-height: 28px;
+    color:rgba(111, 167, 255, 1) ;
+    margin: 20px 20px;
+    padding: 10px 50px;
+    
+}
+
+.optimization_content .four_modular .modular ul li:nth-child(1){
+    font-weight: 900;
+    font-size: 24px;
+    color:rgba(255, 255, 255, 1);
+   background: rgba(70, 142, 255, 1);
+}
+
+.service{
+    width: 1200px;
+    margin: auto;
+    height: 800px;
+    background: url(../image/product/1-1.png) no-repeat;
+    background-position: -16px 150px;
+}
+/*
+service服务流程*/
+.service .service_customer{
+    width: 1060px;
+    margin: auto;
+ 
+}
+.service .service_customer ul img{
+    border: 1px dashed black;
+}
+.service .service_customer ul{
+
+    display: inline-block;
+    text-align: center;
+}
+.service .service_customer ul li{
+    margin: 10px 0 ;
+    font-weight: 700;
+    line-height: 28px;
+    font-family: "PingFang SC";
+    font-size: 20px;
+    color:rgba(79, 79, 79, 1);
+}
+.service .service_customer #one{
+    margin-top: 50px;
+}
+
+@media(max-width:1170px){
+    .service{
+        background: none;
+        margin: 30px;
+    }
+    .service .service_customer #one{
+        margin-top:0;
+    }
+}
+@media(max-width:768px){
+    .service .service_customer{
+        width: 100%;
+    }
+    .service{
+        width: 100%;
+        background: none;
+        
+    }
+}
+
+
+
+/*底部导航*/
+.bottomnav{
+    margin: auto;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(34, 38, 61, 1);
+  }
+  .btnavfloat{
+    width: 1200px;
+    margin: auto;
+  }
+  .bottomnav .btnav_left .left_list ul{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .bottomnav .btnav_left .left_list ul li{
+    padding: 30px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "PingFang SC";
+  color:rgba(187, 187, 187, 1);
+  }
+  .bottomnav .btnav_left .liback{
+    width: 200px;
+    background: url(../image/home/0_logo.png)no-repeat;
+    background-size: 100% 100%;
+  }
+  .bottomnav .ml{
+    margin-left: 30px;
+  }
+  .bottomnav .police{
+    font-size:14px ;
+    font-family:"PingFang SC" ;
+    color:rgba(119, 119, 119, 1);
+    margin-top: 50px;
+    margin-left: 343px;
+  }
+  .bottomnav .btnav_right .rightspan{
+    display: inline-block;
+     width: 1px;
+     height: 150px;
+     background-color: #fff;
+     margin-top: 100px;
+     margin-left: -100px;
+  }
+  .bottomnav .btnav_right img{
+    margin-left: 80px;
+    margin-top: -150px;
+  }
+  
+
+
+
+  @media(max-width:1200px){
+      .public_width{
+          width: 100%;
+          padding: 10% ;
+      }
+   .img_text hr{
+       display: none;
+   }
+      .img_text .first .left{
+          margin: 10% 0 0 0 ;
+      }
+      .img_text .first .left,.right{
+          text-align: left;
+          width: 100%;
+          margin: auto;
+      }
+      .img_text .first .right img{
+         margin: 0 0 10% 50%;
+      }
+      #img3{
+          margin-left: -50%;
+      }
+
+  }
+  @media(max-width:631px){
+    .img_text .first .right img{
+        margin: 0 0 10% 20%;
+     }
+     #img3{
+         margin-left: -80%;
+     }
+  }

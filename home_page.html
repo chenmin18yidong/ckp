@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超快排</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/animate.css">  
+    <script src="./Js/jquery.min.js"></script>
+    <script src="/Js/swiper.min.js"></script>
+    <script src="./Js/login.js"></script>
+    <script src="./Js/wow.js"></script>
+    
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+     <!--遮罩层 -->
+     <div class="bodyBg"></div>
+    <div class="head">
+      <div class="pbtop">
+      <div class="top" >
+        <span></span>
+   <!--头部列表-->
+   
+      <ul id="topul">
+        <li><a href="./home_page.html">首页</a></li>
+        <li><a href="./product.html">产品介绍</a></li>
+        <li><a href="./success.html">成功案列</a></li>
+        <li><a href="./consultation.html">行业资讯</a></li>
+        <li><a href="./money.html">收费标准</a></li>
+        <li><a href="./download.html">软件下载</a></li>
+        <li><a href="./about_our.html">关于我们</a></li>
+       
+        <li><a class="login">登录</a><a>/</a><a class="register">注册</a></li>
+       
+      </ul>
+    </div>
+  </div>
+
+
+    <!--登录注册固定页面-->
+    <div class="login_and_register"> 
+      <!--手机注册-->
+    <div class="phone_register">
+       <span>注册</span>
+       <ul>
+         <li><img src="./image/login/ic_phone.png" alt=""> &nbsp;<input type="text" style="outline: none;" name="phonenumber " class="phonenumber text" value="手机号"></li>
+              <hr>
+         <li><img src="./image/login/ic_password.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="password text" value="设置密码"></li>
+              <hr>
+         <li><img src="./image/login/ic_code.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="Verification_Code text" value="短信验证码">  <span class="obtain" onclick="alertTips()">获取验证码</span></li>
+
+
+              <hr>
+         <li><img src="./image/login/ic_qq.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="contactqq text" value="联系qq"></li>
+             <hr>
+       </ul>
+       <button type="submit" value="注册" class="btnregister">注册</button>
+       <input type="checkbox" value="xuanzhong" class="checkbox"><span>我已经同意 <a href="">《超快排服务条款》</a></span>
+    </div>
+    <!-- 已有账号，现在登陆-->
+    <div class="denglu"> 
+         <img class="dengluclose" src="./image/login/ic_close.png" alt="">
+          <ul>
+            <li>已有账号 <br> 立即登陆 </li>
+            <li>现在登陆。让排名起飞</li>
+          </ul>
+          <button id="denglu" style="cursor: pointer;">登陆</button>
+    </div>
+</div> 
+<!--点击登录按钮，彪出登录页面-->
+   <div class="click_login_button">
+         <div class="phonelogin">
+             <span>登录</span>
+         <ul class="phonelogin_topul">
+               <li><a href="#" >手机短信</a></li>
+               <li><a href="#" id="zhanghao_mima_login">账号密码</a></li>
+         </ul>
+         <ul class="phonelogin_bottomul" >
+              <li><img src="./image/login/ic_phone.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="password text" value="设置密码"></li>
+                   <hr>
+              <li><img src="./image/login/ic_code.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="Verification_Code text" value="短信验证码">  <span class="obtain" onclick="alertTips()">获取验证码</span></li>
+                  <hr>
+         </ul>
+         <button class="btnregister">登陆</button>
+    </div>
+         <div class="account_password_login">
+          <div class="denglu"> 
+            <img class="dengluclose" src="./image/login/ic_close.png" alt="">
+             <ul>
+               <li>还没有账号？ <br> 立即免费注册！ </li>
+               <li>现在注册。让排名起飞</li>
+             </ul>
+             <button id="zhuce" style="cursor: pointer;">注册</button>
+       </div>
+         </div>
+   </div>
+   <!--,点击账号密码，切换至，，账号密码登录,-->
+   <div class="click_login_button2">
+   <div class="phonelogin2">
+    <span>登录</span>
+<ul class="phonelogin_topul">
+      <li><a href="#" id="shouji_duanxin">手机短信</a></li>
+      <li><a href="#">账号密码</a></li>
+</ul>
+<ul class="phonelogin_bottomul" >
+     <li><img src="./image/login/ic_name.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="password tex" value="用户名"></li>
+          <hr>
+     <li><img src="./image/login/ic_phone.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="password tex" value="密码"></li>
+          <hr>
+     <li><img src="./image/login/ic_code.png" alt="">&nbsp;<input type="text" style="outline: none;" name="phonenumber" class="Verification_Code text" value="短信验证码">  <span class="obtain" onclick="alertTips()">验证码</span></li>
+         <hr>
+</ul>
+<button class="btnregister">登陆</button>
+</div> 
+<div class="account_password_login">
+  <div class="denglu"> 
+    <img class="dengluclose" src="./image/login/ic_close.png" alt="">
+     <ul>
+       <li>还没有账号？ <br> 立即免费注册！ </li>
+       <li>现在注册。让排名起飞</li>
+     </ul>
+     <button id="zhuce" style="cursor: pointer;">注册</button>
+</div>
+ </div>
+</div>
+  
+
+  <div class="hdMenu">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+     
+  
+
+
+    <div class="toptext" id="top">
+      <span>快速排名就找超快排    &nbsp;</span>
+      
+      <span>全新算法助力企业轻松获客</span>
+    </div>
+      <span class="liaojie">立即了解</span>
+      <img  class="banner1_right" src="./image/home/0_img_banner1_right.png" alt="" >
+  </div>
+      <h2 class="nav">以用户获益为目标的关键词快速排名产品</h2>
+    <span class="h2xiatext">超快排提供从网站分析、网站优化方案、网站关键词
+      查找到智能应用的全流程服务与方案，全新算法帮助企业
+      快速引流货客
+    </span>
+    <div class="Right_online" onclick="show" id="opi">
+          <ul>
+            <li>  </li>
+            <li>在线客服</li>
+          </ul>
+    </div>
+    <div class="online_mode clear">
+            <div class="online_mode_left fl">
+              <ul>
+                <li><span><img src="./image/login/ic_f_qq.png" alt=""></span>&nbsp;理解交谈</li>
+                <li><span><img src="./image/login/ic_f_phone.png" alt=""></span>&nbsp;18777669936</li>
+              </ul>
+            </div>
+            <div class="online_mode_right fr">
+              <ul>
+              <li><img src="./image/login/erweima.png" alt=""></li>
+              <li><span class="spanimg"><img src="./image/login/ic_f_wechart.png" alt=""></span>加微信</li>
+           
+            </ul>
+          </div>
+    </div>
+
+
+   <a href="#top" >  <img class="backtop" src="./image/login/ic_f_backtop.png" alt="回到顶部"></a>
+
+<div class="container">
+    <div class="ranking row">
+
+       <div class="ranking_list col-lg-4  wow  Bouncing Entrances bounceInLeft   animated">
+         <ul>
+           <li><img src="./image/home/1_ic_1.png" alt="新站导航">&nbsp;新站导航</li>
+           <li>帮助有收录的新站快速提升排名
+          价格低，效果好</li>
+         </ul>
+       </div>
+
+       <div class="ranking_list col-lg-4  wow  Bouncing Entrances bounceInLeft   animated">
+        <ul>
+          <li><img src="./image/home/1_ic_2.png" alt="快速排名">&nbsp;快速排名</li>
+          <li>快速优化排名100内的关键词 
+             最快两天就能上首页
+         </li>
+        </ul>
+       </div>
+
+       <div class="ranking_list col-lg-4  wow  Bouncing Entrances bounceInRight   animated">
+        <ul>
+          <li><img src="./image/home/1_ic_3.png" alt="整站优化">&nbsp;整站优化</li>
+          <li>整站优化更有助于网站权重和转化率 
+         提升</li>
+        </ul>
+       </div>
+
+       <div class="ranking_list col-lg-4  wow  Bouncing Entrances bounceInRight   animated">
+        <ul>
+          <li><img src="./image/home/1_ic_4.png" alt="分析网站">&nbsp;分析网站</li>
+          <li>可快速诊断网站优化题
+            提供免费解决方案让排名更快速</li>
+        </ul>
+       </div>
+    </div></div>
+
+
+
+    <h2 class="nav">此刻你是否正面临一些难题</h2>
+    <span class="h2xiatext">
+      超快排，网站SEO快速排名系统
+    </span>
+
+
+    <!--困难-->
+    <div class="difficult container">
+      <div class="difficult_list row">
+           <div class="list_left col-lg-6 col-xs-12 wow  Bouncing Entrances bounceInLeft   animated">
+             <img src="./image/home/2_img_1.png" alt="">
+           </div>
+           <div class="list_right col-lg-6 col-xs-12 wow  Bouncing Entrances bounceInRight   animated">
+            <ul>
+              <li><span><img src="./image/home/2_ic_1.png" alt=""> 新手刚入行做新站？急需排名没人教？SEO公司不懂选哪家？</span></li>
+              <li> <span>互联网世界那么大，SEO经验不足，排名优化的公司到底怎么选?没人教怎么办？ 怎么做才能让网站快速有排名？</span></li>
+                 <li></li>
+                 <li>“ 智能任务系统” 为您全方位优化网站，有一对一
+                  专属客服，提供解决方案，排名持续上涨</li>
+                 <li></li>
+               </ul>
+           </div>
+      </div>
+      <hr>
+
+
+
+
+      <div class="difficult_list">
+        <div class="list_left1 wow  Bouncing Entrances bounceInLeft   animated">
+
+          <ul>
+            <li><span><img src="./image/home/2_ic_1.png" alt=""> 竞争对手永远是个坎，选择竞价却成本高，回报少</span></li>
+            <li> <span>同行排名总在首页前三，位置稳定又牢固，看着心里急不急？关键词竞价高，每天成本在上升，还得担心同行恶意点击，心里苦不苦？</span></li>
+               <li></li>
+               <li>“ 关键词霸屏” 让您在首页难下来，为您省钱省心，优化成本低至2分钱！</li>
+               <li></li>
+             </ul>
+         </div>
+
+         <div class="list_right1 wow  Bouncing Entrances bounceInRight   animated">
+         <img src="./image/home/2_img_2.png" alt=""></div>
+      </div>
+
+ <hr>
+
+      <div class="difficult_list">
+        <div class="list_left wow  Bouncing Entrances bounceInLeft   animated">
+          <img src="./image/home/2_img_3.png" alt="">
+        </div>
+        <div class="list_right wow  Bouncing Entrances bounceInUp  animated">
+
+         <ul>
+           <li><span><img src="./image/home/2_ic_1.png" alt=""> 竞争对手永远是个坎，选择竞价却成本高，回报少</span></li>
+           <li> <span>同行排名总在首页前三，位置稳定又牢固，看着心里急不急？关键词竞价高，每天成本在上升，还得担心同行恶意点击，心里苦不苦？</span></li>
+              <li></li>
+              <li>“ 关键词霸屏” 让您在首页难下来，为您省钱省心，优化成本低至2分钱！</li>
+              <li></li>
+            </ul>
+        </div>
+   </div>
+    </div>
+
+
+
+    <!--中部导航条-->
+    <div class="middlenav">
+      <ul>
+        <li>定制全新优化方案 <br>
+          解决SEO优化排名问题</li>
+        <li>customized new optimization solution to solve SEO optimization ranking problem</li>
+      </ul>
+
+    </div>
+    <h2 class="nav">自主研发智能优势</h2>
+   
+
+    <span class="h2xiatext">十年潜心研发SEO优化技术，专注各大搜索引擎优化效果
+    </span>
+    <!--自主研发-->
+
+   <div class="container">
+    <div class="Research row">
+      <div class="Research_list col-md-6 wow  Bouncing Entrances  bounceInUp   animated ">
+        <ul>
+          <li><img src="./image/home/4_img_1.png" alt=""></li>
+          <li>一键上词功能</li>
+          <li>打造人人都会用的智能seo优化排名软件</li>
+        </ul>
+      </div>
+      <div class="Research_list col-md-6 Bouncing Entrances  bounceInDown   animated">
+        <ul>
+          <li><img src="./image/home/4_img_2.png" alt=""></li>
+          <li>智能添加任务系统</li>
+          <li>智能任务分配让网站排名效果更好</li>
+        </ul>
+      </div>
+      <div class="Research_list col-md-6 wow  Bouncing Entrances  bounceInUp   animated ">
+        <ul>
+          <li><img src="./image/home/4_img_3.png" alt=""></li>
+          <li>辅助加词软件</li>
+          <li>查词、上词快速便捷</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+    <h2 class="nav">选择超快排，让获客变得更简单</h2>
+    <span class="h2xiatext">因为专注，所以专业
+    </span> 
+    <!--安全稳定-->
+    <div class="container">
+    <div class="security row">
+      <ul class="">
+        <li><img src="./image/home/5_ic_1.png" alt=""></li>
+        <li style=" color:rgba(45, 122, 255, 1);">安全稳定</li>
+      </ul>
+      <ul class="">
+        <li><img src="./image/home/5_ic_2.png" alt=""></li>
+        <li>快速排名</li>
+      </ul>
+      <ul class="">
+        <li><img src="./image/home/5_ic_3.png" alt=""></li>
+        <li>高效引流</li>
+      </ul>
+      <ul class="">
+        <li><img src="./image/home/5_ic_4.png" alt=""></li>
+        <li>价格实惠</li>
+      </ul>
+      <ul class="">
+        <li><img src="./image/home/5_ic_5.png" alt=""></li>
+        <li>专属客服</li>
+      </ul>
+    </div>
+  </div>
+    <div class="tplist ">
+      <ul>
+        <li class="wow  Bouncing Entrances bounceInLeft   animated" >完全真实有效优化，确保安全可靠，无后顾之忧，稳定上首页，后期维护排名稳定更持久</li>
+        <li class="wow  Bouncing Entrances  bounceInUp   animated"><img src="./image/home/5_img_1.png" alt=""></li>
+      </ul>
+
+    </div>
+    <h2 class="nav">超快排-让精准流量提升20倍的排名软件</h2>
+   
+    <span class="h2xiatext">打造搜索引擎排名优化行业的优秀运营商
+    </span> 
+
+
+    <!--数字增长-->
+    <div class="container">
+    <div class="number row">
+       <div class="number_list col-lg-3 clo-md-6">
+         <ul>
+           <li>33163</li>
+           <li>用户数</li>
+           <li>每2个会员注册，就有1个充值
+            并持续使用</li>
+         </ul>
+       </div>
+
+       <div class="number_list col-lg-3 clo-md-6">
+        <ul>
+          <li>80%</li>
+          <li>上词率</li>
+          <li>每优化10个词就有8个词
+            达标上首页</li>
+        </ul>
+      </div>
+
+      <div class="number_list col-lg-3 clo-md-6">
+        <ul>
+          <li>1,593,873</li>
+          <li>在线优化关键词数</li>
+          <li>支持优化各正规行业网站 
+            百万家企业的选择</li>
+        </ul>
+      </div>
+
+      <div class="number_list col-lg-3 clo-md-6">
+        <ul>
+          <li>96,232</li>
+          <li>下载软件数</li>
+          <li>独家关键词排名查询软件
+            免费下载</li>
+        </ul>
+      </div>
+       
+      </div></div>
+
+      <h2 class="nav">我们服务的客户行业</h2>
+      <span class="h2xiatext">流量成本越来越高，我们给您低成本流量洼地
+      </span> 
+
+
+      <!--我们的服务客户-->
+
+
+      <div class="container">
+        <div class="customer row">
+
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_1.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+           
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_2.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_3.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_4.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_5.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+            <div class="customer_list col-lg-4">
+              <ul>
+                <li><img src="./image/home/6_img_6.png" alt=""></li>
+                <li>教育培训行业案例与解决方案</li>
+              </ul>
+            </div>
+        </div></div>
+        <div class="lookduo clear">
+   <span class="fr">  查看更多 >></span></div>
+   <h2 class="nav">优化排名，从现在开始</h2>
+   <span class="h2xiatext">快速提升网站关键词排名，让更多客户找到你
+   </span> 
+
+   <!--多  快  好  省-->
+   <div class="container">
+   <div class="good row">
+    <div class="good_list col-lg-3">
+      <span class="col-lg-4"><img src="./image/home/7_ic_2.png" alt=""></span>
+      <span class="col-lg-8">多搜索引擎优
+           <br>
+        让更多有效客户找到你</span>
+</div>
+<div class="good_list col-lg-3">
+  <span class="col-lg-4"><img src="./image/home/7_ic_2.png" alt=""></span>
+  <span class="col-lg-8">多搜索引擎优
+       <br>
+    让更多有效客户找到你</span>
+</div>
+
+<div class="good_list col-lg-3">
+  <span class="col-lg-4"><img src="./image/home/7_ic_2.png" alt=""></span>
+  <span class="col-lg-8">多搜索引擎优
+       <br>
+    让更多有效客户找到你</span>
+</div>
+
+<div class="good_list col-lg-3">
+  <span class="col-lg-4"><img src="./image/home/7_ic_2.png" alt=""></span>
+  <span class="col-lg-8">多搜索引擎优
+       <br>
+    让更多有效客户找到你</span>
+</div></div>
+
+ </div>
+
+
+
+ <div class="footer">
+       <ul>
+         <li>1,593,124 家企业都在用超快排关键词排名系统
+       快速提升网站关键词排名，你还在等什么？</li>
+         <li>马上注册</li>
+       </ul>
+ </div>
+
+
+ <!--底部导航-->
+
+
+ <div class="bottomnav ">
+   <div class="btnavfloat clear">
+     <div class="btnav_left fl">
+       <div class="left_list ">
+          <ul>
+            <li><img src="./image/home/8_ic_1.png" alt="">友情链接:</li>
+            <li>我的网站</li>
+            <li>我的网站</li>
+            <li>我的网站</li>
+            <li>我的网站</li>
+            <li>我的网站</li>
+          </ul>
+       </div>
+       <div class="left_list ml">
+        <ul>
+          <li class="liback"></li>
+          <li>首页</li>
+          <li>产品介绍</li>
+          <li>成功案列</li>
+          <li>收费标准</li>
+          <li>软甲下载</li>
+          <li>关于我们</li>
+        </ul>
+       </div>
+       <div class="left_list">
+         <ul>
+            <li class="police"><img src="./image/home//8_ic_2.png" alt=""> 桂公网安备 xx000000号  &nbsp;广西简创网络技术有限公司 桂ICP备xx000号</li>
+          </ul>
+       </div>
+     </div>
+     <div class="btnav_right fr">
+
+        <span class="rightspan"> </span>
+        <span class="imgspan"> <img src="./image/home/8_erweima.png" alt=""><br> 微信公众号</span>
+       
+        <span></span>
+     </div>
+    </div>
+ </div>
+
+ 
+
+ </body>
+</html>

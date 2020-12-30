@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*p 导航条*/
+.nav{
+    width: 100%;
+    display: block;
+     padding: 60px 0 20px;
+     text-align: center;
+    font-size: 32px;
+
+    font-family:"PingFang SC" ;
+    color :rgba(68, 68, 68, 1);
+  }
+  .nav::after{
+    display: block;
+    content: " ";
+    width: 120px;
+    height: 4px;
+    background-color: rgba(70, 142, 255, 1);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .navxiatext{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family:"PingFang SC" ;
+    color :rgba(152, 152, 152, 1);
+  }
+
+  
+
+
+
+
+
+
+.headnav{
+    width: 100%;
+    height: 390px;
+    background: url(../image/we/top_banner7.png)no-repeat;
+}
+.headnav .top {
+    width: 1188px;
+    height: 70px;
+    margin-left: 366px;
+  }
+  .headnav .top span{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    margin-top: 15px;
+    background: url(../image/home/0_logo.png)no-repeat;
+  }
+  .headnav .top ul a{
+    color:rgba(255,255,255,1);
+  }
+  .headnav .top ul{
+    margin-left: 188px;
+    display: inline-block;
+    margin-top: -30px;
+    width:840px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   color:rgba(255,255,255,1);
+       font-size: 16px;
+       font-family: "PingFang SC";
+   
+  }
+  
+   .headnav .top ul li:nth-child(7)::after
+   {
+   
+        display: block;
+      content: " ";
+      width: 72px;
+      height: 4px;
+      background-color: white;
+      margin-top: 15px;
+     
+  
+    }
+  
+    .headnav .top ul li:nth-child(8){
+      width: 92px;
+      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      font-family: "PingFang SC";
+      font-size:14px ;
+      color:rgba(255, 255, 255, 1);
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .headnav .top .headnav_top_p{
+  
+       text-align: center;
+        font-size:42px ;
+        font-family:"PingFang SC" ;
+        color:rgba(255, 255, 255, 1);
+        padding: 130px;
+    }
+
+
+    
+
+
+
+
+    /*<!--面包屑-->
+    <!--关于我们-->
+      <!--关于我们开始-*/
+      .about_our .current{
+          width: 1200px;
+          margin: 30px auto;
+      }
+      .about_our .current ul li{
+          display: inline-block;
+      }
+
+      
+      /*夕阳背景图*/
+      .about_our .sun p{
+        margin: 20px auto;
+        width: 1200px;
+        height: 295px;
+        background: url(../image/we/0.png) no-repeat;
+    }
+
+    /*关于我们的文字弹性布局*/
+      .about_our .aboutour_text{
+          width: 1200px;
+          margin: 10px auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      /*关于我们左边文字*/
+      .about_our .aboutour_text .text_left{
+          margin: 10px auto;
+          width: 598px;
+        
+          font-size:22px ;
+          color:rgba(71, 71, 71, 1);
+          font-family: "PingFang SC";
+          padding: 20px 0;
+      }
+      /*关于我们的右边文字*/
+      .about_our .aboutour_text .text_right{
+        margin: 10px auto;
+        width: 598px;
+   
+        font-size:16px ;
+        color:rgba(71, 71, 71, 1);
+        font-family: "PingFang SC";
+        line-height:38px;
+       
+    }
+    .about_our .aboutour_text .text_right ul li{
+        display: inline-block;
+        padding: 20px 0;
+    }
+
+
+
+    /*企业的发展历程*/
+
+    .development_history{
+        width: 1200px;
+        margin: 30px auto;
+       
+    }
+    .development_history  .history_listleft{
+        width: 570px;
+      
+    }
+
+    /*调文字和中间的标点对齐*/
+    /*2020*/
+    .development_history   .twenty{
+      margin: 10px 0 0 0;
+    }
+    /*2017*/
+    .development_history   .Seventeen{
+     margin: 380px 0   ;
+    }
+    /*2015*/
+    .development_history   .Fifteen{
+      margin: 400px 0   ;
+     }
+    
+     /*右边*/
+     /*2018*/
+     .development_history   .Eighteen{
+      margin: 250px 0   ;
+     }
+     /*2016*/
+     .development_history   .Sixteen{
+      margin: 420px 0   0 0 ;
+     }
+     /*2014*/
+     .development_history   .Fourteen{
+      margin: 390px 0   ;
+     }
+    
+     .development_history  .history_listrightleft  ul{
+      text-align: left;
+     }
+
+
+
+    /*对齐完成*/
+   
+     .development_history ul{
+         display: inline-block;
+         text-align: right;
+      
+     }
+    .development_history ul li{
+        font-size: 38px;
+        font-weight: Bold;
+        color:rgba(71, 71, 71, 1);
+        font-family: "PingFang SC";
+        margin: 0 60px ;
+    }
+    .development_history ul li:nth-child(2){
+        font-size: 16px;
+        font-weight: Medium;
+        color:rgba(71, 71, 71, 1);
+        font-family: "PingFang SC";
+    }
+    /*2020年完成*/
+  
+    /*中间的图片*/
+    .development_history  .history_listmoddle{
+      
+        display: block;
+    }
+    .development_history  .history_listmoddle p{
+  
+        display: inline-block;
+        width: 14px;
+        height: 1500px;
+    
+    }
+
+    /*右边的文字加图片*/
+    .development_history .history_listright{
+      display: inline-block;
+      width: 540px;
+ 
+    }
+   
+
+
+    

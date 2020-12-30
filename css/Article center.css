@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*头部*/
+.headnav{
+    width: 100%;
+    height: 390px;
+    background: url(../image/hangye/top_banner4_1.png)no-repeat;
+}
+.headnav .top {
+    width: 1188px;
+    height: 70px;
+    margin-left: 366px;
+  }
+  .headnav .top span{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    margin-top: 15px;
+    background: url(../image/home/0_logo.png)no-repeat;
+  }
+  .headnav .top ul a{
+    color:rgba(255,255,255,1);
+  }
+  .headnav .top ul{
+    margin-left: 188px;
+    display: inline-block;
+    margin-top: -30px;
+    width:840px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   color:rgba(255,255,255,1);
+       font-size: 16px;
+       font-family: "PingFang SC";
+   
+  }
+  
+   .headnav .top ul li:nth-child(2)::after {
+        display: block;
+      content: " ";
+      width: 72px;
+      height: 4px;
+      background-color: white;
+      margin-top: 15px;
+    }
+  
+    .headnav .top ul li:nth-child(8){
+      width: 92px;
+      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      font-family: "PingFang SC";
+      font-size:14px ;
+      color:rgba(255, 255, 255, 1);
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .headnav .top .headnav_top_p{
+       text-align: center;
+        font-size:42px ;
+        font-family:"PingFang SC" ;
+        color:rgba(255, 255, 255, 1);
+        padding: 50px 0 20px;
+
+    }
+    .headnav .top .headnav_top_p1{
+        text-align: center;
+         font-size:16px ;
+         font-family:"PingFang SC" ;
+         color:rgba(255, 255, 255, 1);
+         padding: 30px;
+  
+     }
+    
+/*头部结束*/
+
+
+
+    /*<!--面包屑-->
+    <!--关于我们-->
+      <!--关于我们开始-*/
+      .about_our .current{
+        width: 1200px;
+        margin: 30px auto;
+    }
+    .about_our .current ul li{
+        display: inline-block;
+        color:rgba(163, 163, 163, 1);
+    }
+    
+    .about_our .current ul li:nth-child(4){
+        display: inline-block;
+        color:rgba(51, 51, 51, 1);
+    }
+
+
+    
+/*p 导航条*/
+.nav{
+    width: 100%;
+    display: block;
+     padding: 60px 0 20px;
+     text-align: center;
+    font-size: 32px;
+
+    font-family:"PingFang SC" ;
+    color :rgba(68, 68, 68, 1);
+  }
+  .nav::after{
+    display: block;
+    content: " ";
+    width: 120px;
+    height: 4px;
+    background-color: rgba(70, 142, 255, 1);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+
+  /*文章中心下面的文字*/
+
+  .text .textleft{
+      font-family: "";
+      display: inline-block;
+ 
+  }
+  .text .textright{
+      display: inline-block;
+
+}
+.textleft #textleft_ul1 li:nth-child(1){
+  display: inline-block;
+  width: 100%;
+   margin:6% 0;
+   font-size: 20px;
+   color: rgba(68, 68, 68, 1);
+}
+.textleft #textleft_ul1 li:nth-child(2){
+  display: inline-block;
+  width: 100%;
+   margin:0 0 4% 0;
+   font-size: 12px;
+   color: rgba(152, 152, 152, 1);
+}
+.textleft #textleft_ul1 li:nth-child(3){
+  display: inline-block;
+  width: 100%;
+   margin:0 0 4% 0;
+   font-size: 14px;
+   line-height: 24px;
+   color:rgba(152, 152, 152, 1);
+   padding:4% 2%;
+}
+#text_img1{
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#text_img2{
+  position: absolute;
+  top: 50%;
+  right:  0;
+}
+#text_img3{
+  position: absolute;
+  bottom:  0;
+  right :0;
+}
+#text_img4{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+#textleft_ul2{
+  font-size: 16px;
+  color: rgba(68, 68, 68, 1);
+  line-height: 30px;
+  padding:4% 2%;
+}
+#textleft_ul2 li{
+  padding:2% 0;
+}
+#textleft_ul2 li:nth-child(2) img{
+  width: 90%; 
+  padding: 5% ;
+  margin: 0 5%;
+
+}
+
+/*推荐文章*/
+.textright{
+  display: inline-block;
+
+}
+#spanlabel{
+  margin: 0 0 0 10%;
+    font-size:18px ;
+    color:rgba(68, 68, 68, 1) ;
+    font-weight: 700;
+  
+}
+#spanlabel::after{
+  display: block;
+  content: " ";
+  width: 18%;
+  height: 4px;
+  background-color: rgba(70, 142, 255, 1);
+  margin-top: 20px;
+   margin-left: 10%;
+}
+
+.textright ul li:nth-child(2){
+  color:rgba(152, 152, 152, 1);
+}
+
+#spanlabel1{
+  display: inline-block;
+  margin-top: 10px;
+  margin: 10% 0 0 10%;
+  font-size:18px ;
+  color:rgba(68, 68, 68, 1) ;
+  font-weight: 700;
+}
+#spanlabel1::after{
+  display: block;
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background-color: rgba(70, 142, 255, 1);
+  margin-top: 20px;
+   margin-left: 10%;
+}
+#text_img{
+  width: 100%;
+  margin-top: 10%;
+}
+
+
+
+
+@media(max-width:750px){
+  #textright{
+    width: 100%;
+   border: 1px solid red;
+  }
+}
+
+
+

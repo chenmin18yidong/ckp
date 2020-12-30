@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.public_width{
+    width: 1200px;
+    margin:0 auto;
+}
+
+/*头部*/
+.headnav{
+    width: 100%;
+    height: 390px;
+    background: url(../image/download/top_banner6.png)no-repeat;
+}
+.headnav .top {
+    width: 1188px;
+    height: 70px;
+    margin-left: 366px;
+  }
+  .headnav .top span{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    margin-top: 15px;
+    background: url(../image/home/0_logo.png)no-repeat;
+  }
+  .headnav .top ul a{
+    color:rgba(255,255,255,1);
+  }
+  .headnav .top ul{
+    margin-left: 188px;
+    display: inline-block;
+    margin-top: -30px;
+    width:840px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   color:rgba(255,255,255,1);
+       font-size: 16px;
+       font-family: "PingFang SC";
+   
+  }
+  
+   .headnav .top ul li:nth-child(6)::after
+   {
+   
+        display: block;
+      content: " ";
+      width: 72px;
+      height: 4px;
+      background-color: white;
+      margin-top: 15px;
+     
+  
+    }
+  
+    .headnav .top ul li:nth-child(8){
+      width: 92px;
+      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 1);
+      font-family: "PingFang SC";
+      font-size:14px ;
+      color:rgba(255, 255, 255, 1);
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .headnav .top .headnav_top_p{
+  
+       text-align: center;
+        font-size:42px ;
+        font-family:"PingFang SC" ;
+        color:rgba(255, 255, 255, 1);
+        padding: 130px;
+    }
+/*头部结束*/
+
+
+
+    /*<!--面包屑-->
+    <!--关于我们-->
+      <!--关于我们开始-*/
+      .about_our .current{
+        width: 1200px;
+        margin: 30px auto;
+    }
+    .about_our .current ul li{
+        display: inline-block;
+        color:rgba(163, 163, 163, 1);
+    }
+    
+    .about_our .current ul li:nth-child(4){
+        display: inline-block;
+        color:rgba(51, 51, 51, 1);
+    }
+
+
+
+    /* <!--超快排流量提升助手下载-->*/
+    @media(max-width:1200px){
+        .download{
+            display: inline;
+        }
+    }
+
+
+
+    .download .download_left{
+        width: 58%;
+        margin: auto;
+        text-align: center;
+    
+         font-family: "PingFang SC";
+         margin: 0 10px;
+    }
+
+/*超大文字*/
+.download .download_left #ulone li{
+    display: inline-block;
+   font-size: 54px;
+   color:rgba(0, 0, 0, 1) ;
+}
+.download .download_left #ulone li:nth-child(2){
+    display: inline-block;
+   font-size:   30px;
+   color:rgba(162, 162, 163, 1) ;
+   margin: 10px 0  20px 0 ;
+}
+
+.download .download_left .click_download #ultwo{
+    display: inline-block;
+   
+}
+.download .download_left .click_download #ultwo img{
+    border: 1px dashed black;
+    margin: 20px ;
+   
+}
+.download .download_left .click_download #ultwo li button{
+    padding: 10px 10px ;
+    color:rgba(70, 142, 255, 1);
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid rgba(70, 142, 255, 1);
+    background: #fff;
+    border-radius: 20px;
+}
+.download .download_left .click_download #ultwo li:nth-child(3){
+    margin: 20px;
+    font-size: 14px;
+    color:rgba(51, 51, 51, 1);
+    font-family: "PingFang SC";
+}
+
+
+    .download .download_right{
+        padding: 100px 0;
+        width: 40%;
+
+         background: url(../image/download/5.png) no-repeat;
+    }
+
+  
